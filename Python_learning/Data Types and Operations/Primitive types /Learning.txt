@@ -1,0 +1,92 @@
+
+### **1. Integer (`int`)**
+- **Description**: Whole numbers, both positive and negative.
+- **Examples**: `-10, 0, 42`
+- **Common Operations**:
+  - Arithmetic: `+`, `-`, `*`, `//` (floor division), `%` (modulus), `**` (exponentiation)
+  - Comparison: `<`, `>`, `<=`, `>=`, `==`, `!=`
+
+```python
+a = 5
+b = 2
+print(a + b)  # 7
+print(a // b) # 2
+print(a ** b) # 25
+```
+
+---
+
+### **2. Float (`float`)**
+- **Description**: Numbers with decimal points.
+- **Examples**: `3.14, -0.001, 2.0`
+- **Common Operations**:
+  - Arithmetic: Same as integers, but division `/` always returns a float.
+  - Methods: `.is_integer()` checks if it’s equivalent to an integer.
+
+```python
+x = 3.5
+y = 1.2
+print(x - y)         # 2.3
+print(x / y)         # 2.9166666666666665
+print((5.0).is_integer())  # True
+```
+
+---
+
+### **3. String (`str`)**
+- **Description**: Sequence of characters, enclosed in single, double, or triple quotes.
+- **Examples**: `'hello'`, `"world"`, `'''multi-line'''`
+- **Common Operations**:
+  - Concatenation: `+`
+  - Repetition: `*`
+  - Indexing/Slicing: `str[0]`, `str[1:5]`
+  - Methods: `.upper()`, `.lower()`, `.strip()`, `.replace()`, `.find()`, `.split()`, `.join()`
+
+```python
+s = "Python"
+print(s[0])        # 'P'
+print(s[2:5])      # 'tho'
+print(s.upper())   # 'PYTHON'
+print(s + " Rocks") # 'Python Rocks'
+print("Hi! " * 3)  # 'Hi! Hi! Hi! '
+```
+
+---
+
+### **4. Boolean (`bool`)**
+- **Description**: Represents `True` or `False`.
+- **Examples**: `True`, `False`
+- **Common Operations**:
+  - Logical: `and`, `or`, `not`
+  - Comparison: `==`, `!=`, `<`, `>`
+  - Casting: `bool(0)` is `False`, `bool(1)` is `True`
+
+```python
+is_raining = True
+is_sunny = False
+print(is_raining and is_sunny)  # False
+print(not is_raining)          # False
+print(5 > 3)                   # True
+```
+
+---
+
+### **5. Other Notes on Operations**:
+- **Type Conversion**:
+  - `int()`, `float()`, `str()`, `bool()`
+  - Examples:
+    ```python
+    print(int(3.7))    # 3
+    print(float(10))   # 10.0
+    print(bool(""))    # False
+    ```
+
+- **Type Checking**:
+  - Use `type()` to determine the type of a variable.
+  - Example:
+    ```python
+    print(type(42))       # <class 'int'>
+    print(type(3.14))     # <class 'float'>
+    print(type(True))     # <class 'bool'>
+    ```
+
